@@ -1,0 +1,19 @@
+/* --- CORES EM CSS --- */
+
+/* RGB (RED, GREEN E BLUE) */
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+/* HEXADECIMAIS #RRGGBB*/
+
+p {
+    color: #ffb92d;
+}
+
+/* HSL (HUE, SATURATION AND LIGHTNESS */
+
+h2 {
+    color: hsl(236, 84%, 41%);  /*Isso serve mais quando voc~e  PENSA: QUERIA DEIXAR ESSA COR MAIS ESCURA */
+}
