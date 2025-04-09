@@ -22,7 +22,7 @@ a {
 button {
     background-color: #248030;
     border-radius: 5px;
-    border: 0px;
+    border: 2px solid transparent;
 }
 
 footer {
