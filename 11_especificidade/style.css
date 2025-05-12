@@ -1,0 +1,41 @@
+body > h1 {
+    color: #0f0; /* Esse tem maior prioridade que o último, mas menos do que o id e menos do que o da classe */
+}
+
+#amarelo {
+    color: rgb(224, 230, 51); /* Esse é o que tem maior prioridade de todos */
+}
+
+.verde {
+    color: #00e; /* Esse tem prioridade o ao ultimo, ao primeiro, e menos do que o segundo */
+}
+
+h1 {
+    color: #f00; /* Esse é o que tem menos prioridade de todos */
+}
+
+/* Se você passar o mouse em cima do seletor, ele indica na parte de baixo da mensagem o nível de especificidade */
+
+body {
+    background-color: black;
+}
+
+/* Observação: Caso exista um estilo inline, ou seja, lá no código HTML, ele seria aplicado independente desses códigos
+
+Exemplo:
+
+    Lá no Html adicionar o estilo no elemento h1:
+
+        <h1 style="color: blueviolet;" id="amarelo" class="verde">Especificidade</h1>
+
+*/
+
+/* A menos que haja um seletor com "!important", pois ai ele vai priorizar isso.
+
+Exemplo:
+
+    h1 {
+        color: #f00 !important; 
+    }
+
+*/
