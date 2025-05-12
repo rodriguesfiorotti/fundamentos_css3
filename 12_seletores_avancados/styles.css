@@ -1,0 +1,95 @@
+/* seletor :nth-child() --> Permite encontrar um filho em especifico nth = qualquer um, 1th o primeiro ...*/
+
+.geral li:nth-child(2) { 
+    color: red; /* Pega exatamente o segundo item da lista e muda a cor para vermelho */
+}
+
+.geral li:nth-child(3n) {
+    color: #00f; /* 3 * n assim será aplicado nas posições referentes a tabela de 3  (3, 6, 9, 12, 15, ....*/
+}
+
+.geral li:nth-child(10n - 9) {
+    color:blueviolet; 
+    /*  
+        ((10 * 1) - 9) = 1; aplica o estilo na posição 1
+    
+        ((10 * 2) - 9) = 11; aplica o estilo na posição 11
+    */
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* Para selecionar pares e impares também funciona em ingês */
+
+.impares_pares li:nth-child(odd) {
+    color: brown /* odd = impares === (2n - 1) */
+}
+
+.impares_pares li:nth-child(even) {
+    color: yellow /* even = pares === (2n) */
+}
+
+
+/* ------------------------------------------------------------------- */
+
+li:hover {
+    /* Para quando o mouse passa por cima do elemento */
+    background-color: #3b2626;
+    color: white !important; 
+    /* 
+    Aqui precisei utilizar do important, por causa da especificidade dos outros seletores que utilizam o seletor de classe.
+    */
+}
+
+input:focus {
+    /* Para quando o elemento for focado */
+    background-color: red;
+    color: white;
+}
+
+/* Existem outros seletores para os estados de um elemento */
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* pseudo-elementos -> ::before e ::after */ 
+
+.pseudo li::before {
+    color: orange;
+    content: "(antes) ";
+}
+
+
+.pseudo li::after {
+    color: orangered;
+    content: " (depois)";
+}
+
+/* ------------------------------------------------------------------- */
+
+/* First, Last e Not */
+
+.logic li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+.logic li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+/* Aqui criei uma lógica para aplicar em todos de menos no primeiro e no último */
+.logic li:not(:first-child):not(:last-child) {
+    color: rgb(0, 255, 255);
+}
+
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+}
