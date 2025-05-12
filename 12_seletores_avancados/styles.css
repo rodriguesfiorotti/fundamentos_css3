@@ -62,7 +62,6 @@ input:focus {
     content: "(antes) ";
 }
 
-
 .pseudo li::after {
     color: orangered;
     content: " (depois)";
