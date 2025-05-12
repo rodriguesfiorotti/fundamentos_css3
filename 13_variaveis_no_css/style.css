@@ -1,0 +1,50 @@
+/* 
+    As variáveis são declaradas dentro do seletor root (ou seja, na raiz do site)
+    
+    Elas seguem o seguinte padrão para declaração:
+
+    --nome-da-variavel: valorcss;
+    
+*/
+
+
+
+:root {
+    --cor-principal: #3c59e7;
+    --cor-claro: #eaeaea;
+    --cor-escuro: #232323;
+    --preenchimento-pequeno: 0.25rem 1rem;
+    --preenchimento-medio: 2rem;
+    --preenchimento-grande: 4rem;
+}
+
+/* 
+
+    Para utilizar das variaveis, basta utilizar da função var() e nela informar a variável com o valor desejado 
+
+*/
+
+header {
+    background-color: var(--cor-escuro);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pequeno);
+}
+
+section {
+    background-color: var(--cor-claro);
+    padding: var(--preenchimento-medio);
+}
+
+div {
+    background-color: var(--cor-principal);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pequeno);
+}
+
+/* Apenas exexmplificando */
+
+.red-box {
+    --cor-principal: #f64348
+    /* Nesse caso, altera o valor da variavel apenas nesse elemento */
+}
+
