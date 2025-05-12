@@ -1,0 +1,14 @@
+Hero = Nome usado para definir aquela parte inicial do site (quando você carrega ele e vê as primeiras informações)
+
+
+Para nomear as classes do HTML foi utilizada a nomenclatura chamada "BEM".
+
+BEM --> Block Element Modifier
+
+nomeclasse__elemento-algumamodificacao
+
+Exemplo:
+
+hero__background (block__element)
+hero_foreground (block__element)
+section__img-inline (block__element-modifier)
